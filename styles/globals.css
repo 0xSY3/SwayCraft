@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.fixed-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: right;
+}
+
+.fixed-div img {
+  width: 60px;
+  height: 60px;
+  margin-top: 4px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1px;
+}
+
+.fixed-div img:hover {
+  padding: 0;
+}
+
+.chat {
+  height: min(570px,90vh - 100px);
+  width: min(400px,100vw - 60px);
+  overflow: hidden;
+  border-radius: .625em;
+  -webkit-box-shadow: 0 12px 50px -12px rgba(0,0,0,.5);
+  box-shadow: 0 12px 50px -12px rgba(0,0,0,.5);
+  -webkit-transition-property: opacity,height,width;
+  transition-property: opacity,height,width;
+  -webkit-transition-duration: .3s,0s,0s;
+  transition-duration: .3s,0s,0s;
+  -webkit-transition-delay: 0s,0s,0s;
+  transition-delay: 0s,0s,0s;
+  opacity: 1;
+  display: none;
+}
+
+.chat iframe {
+  border-radius: .625em;
+}
+
+.chat-show{
+  display: block;
+}
