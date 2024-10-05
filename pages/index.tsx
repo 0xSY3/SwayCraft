@@ -62,22 +62,7 @@ export default function Home() {
         <button>close</button>
       </form>
     </dialog>
-    <div className='fixed-div'>
-      <div id="grill" className='chat'></div>
-      <img onClick={() => {
-        const grillDiv = document.getElementById('grill');
-
-        // Toggle the 'chat-show' class on the div element
-        grillDiv?.classList.toggle('chat-show');
-
-        // Check if the class 'chat-show' is present
-        if (grillDiv?.classList.contains('chat-show')) {
-          // Initializing grill.
-          const config = {};
-          (window as any)?.GRILL?.init(config);
-        }
-      }} id="grill-toggle" alt="grill-logo" src="https://sub.id/images/grillchat.svg" />
-    </div>
+    
 
   </>
 }
