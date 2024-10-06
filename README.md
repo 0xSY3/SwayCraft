@@ -1,7 +1,5 @@
 # SwayCraft: AI-Powered Development Assistant for Fuel Blockchain
 
-![SwayCraft Logo](path/to/logo.png)
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
