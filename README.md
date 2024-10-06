@@ -73,4 +73,47 @@ npm install
 npm run dev
 ```
 
+## Usage
+
+1. Open SwayCraft in your browser (default: `http://localhost:3000`).
+2. Use the code generation feature by entering a prompt in the main input field.
+3. Access the AI chat assistant by clicking the "Ask AI" button in the header.
+4. Explore generated code and AI responses in the interface.
+
+## AI Integration
+
+SwayCraft leverages two powerful AI models to provide comprehensive assistance:
+
+### OpenAI GPT-3.5
+- Primary use: Code generation and initial query processing
+- Strengths: Broad knowledge base, strong code generation capabilities
+
+### Anthropic's Claude
+- Primary use: Detailed explanations and Fuel-specific knowledge
+- Strengths: Nuanced understanding, ability to provide detailed technical explanations
+
+Our backend uses a custom routing system to direct queries to the most appropriate AI model based on the type of assistance required.
+
+## Roadmap
+
+- [ ] Implement compile and test functions for Sway contracts
+- [ ] Integrate with Fuel's block explorer for real-time contract analysis
+- [ ] Add automated testing suggestions
+- [ ] Implement gas optimization recommendations
+- [ ] Expand predicate implementation assistance
+- [ ] Develop a plugin system for IDE integration (VSCode, IntelliJ)
+- [ ] Create a community contribution system for verified code snippets and examples
+
+## Contributing
+
+We welcome contributions to SwayCraft! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more information on how to get started.
+
+## License
+
+SwayCraft is released under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ for the Fuel ecosystem.
+
 
