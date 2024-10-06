@@ -59,3 +59,18 @@ The application follows a client-server architecture:
 ```
   https://github.com/0xSY3/SwayCraft
 ```
+
+3. Install dependencies:
+   
+```
+npm install
+```
+  
+4. Create a `.env` file in the root directory and add your API keys.
+5. Run Development Server.
+
+```
+npm run dev
+```
+
+
